@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gowtham S A | Portfolio</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h1{
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:#d4af37;
+}
+
+.hero h2{
+font-size:28px;
+margin-top:10px;
+color:#00f5ff;
+}
+
+.hero p{
+margin-top:20px;
+width:60%;
+opacity:0.8;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+background:#d4af37;
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* ABOUT */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:60px;
+color:#d4af37;
+}
+
+.about{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.about img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #d4af37;
+box-shadow:0 0 25px rgba(212,175,55,0.7);
+}
+
+.about p{
+max-width:500px;
+line-height:1.7;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+}
+
+.skill-card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+border:1px solid #d4af37;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.project-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-card h3{
+padding:10px 15px;
+}
+
+.project-card p{
+padding:0 15px 15px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact img{
+margin-top:30px;
+width:200px;
+border-radius:12px;
+transition:0.4s;
+box-shadow:0 0 15px rgba(212,175,55,0.5);
+}
+
+.contact img:hover{
+transform:scale(1.1);
+box-shadow:0 0 35px rgba(212,175,55,1);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+margin-top:40px;
+opacity:0.6;
+}
+
+</style></head><body><nav><h1>GOWTHAM</h1><ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul></nav><section class="hero"><h1>GOWTHAM S A</h1><h2 id="typing"></h2><p>
+Engineering student passionate about AI, robotics and smart industrial systems.
+</p><button class="btn" onclick="scrollToProjects()">View Projects</button>
+
+</section><section id="about"><h2 class="section-title">About Me</h2><div class="about"><img src="profile.jpg.jpeg"><p>
+I am Gowtham, an engineering student passionate about Artificial Intelligence,
+Robotics and Embedded Systems. I enjoy building innovative solutions such as
+industrial gas monitoring systems and smart IoT dashboards.
+</p></div></section><section id="skills"><h2 class="section-title">Skills</h2><div class="skills"><div class="skill-card">Arduino</div>
+<div class="skill-card">IoT Systems</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">AI Development</div>
+<div class="skill-card">Embedded Systems</div></div></section><section id="projects"><h2 class="section-title">Projects</h2><div class="projects"><div class="project-card">
+<img src="project1.png">
+<h3>Industrial Gas Monitoring</h3>
+<p>IoT system detecting hazardous gases in industries.</p>
+</div><div class="project-card">
+<img src="project2.jpeg">
+<h3>AI Object Detection</h3>
+<p>Computer vision system detecting objects using AI.</p>
+</div><div class="project-card">
+<img src="project3.png">
+<h3>IoT Dashboard</h3>
+<p>Real-time monitoring dashboard for sensor data.</p>
+</div></div></section><section id="contact"><h2 class="section-title">Contact</h2><div class="contact"><p>Scan the QR code to access my contact card</p><img src="qr.png"></div></section><footer>© 2026 Gowtham S A | Portfolio
+
+</footer><script>
+
+/* Smooth scroll */
+
+function scrollToProjects(){
+document.getElementById("projects").scrollIntoView({
+behavior:'smooth'
+});
+}
+
+/* Typing animation */
+
+const text = "AI • IoT • Embedded Systems Developer";
+let i = 0;
+
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+}
+
+typing();
+
+</script></body>
+</html>
